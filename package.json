@@ -38,7 +38,8 @@
     "styled-components": "2.0.0",
     "webpack": "2.6.1",
     "webpack-dev-middleware": "1.10.2",
-    "webpack-hot-middleware": "2.18.0"
+    "webpack-hot-middleware": "2.18.0",
+    "clappr": "^0.2.90"
   },
   "devDependencies": {
     "babel-core": "6.24.1",
@@ -72,11 +73,11 @@
     "react-test-renderer": "15.5.4",
     "webpack-dev-server": "2.4.5"
   },
-  "name": "complete-intro-to-react",
-  "version": "3.0.0",
-  "description": "A Complete Intro to React workshop",
+  "name": "blockchains",
+  "version": "1.0.0",
+  "description": "Blockchains Video SPA player assessment",
   "main": "server.js",
-  "repository": "git@github.com:btholt/complete-intro-to-react.git",
-  "author": "Brian Holt <btholt@gmail.com>",
+  "repository": "git@github.com:sosproduction/blockchains.git",
+  "author": "Hannah Rachel Geisman",
   "license": "MIT"
 }

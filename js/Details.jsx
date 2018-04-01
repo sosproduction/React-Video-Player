@@ -4,6 +4,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Header from './Header';
 import Spinner from './Spinner';
+import ClapprPlayer from './ClapprPlayer';
 import { getAPIDetails } from './actionCreators';
 
 class Details extends React.Component {
@@ -36,12 +37,7 @@ class Details extends React.Component {
           <p>{description}</p>
         </section>
         <div>
-          <iframe
-            title="YouTube Video Frame"
-            src={`https://www.youtube-nocookie.com/embed/${trailer}?rel=0&amp;controls=0&amp;showinfo=0`}
-            frameBorder="0"
-            allowFullScreen
-          />
+           <ClapprPlayer id={`${imdbID}`} source={`${trailer}`} width="640" height="360" />
         </div>
       </div>
     );

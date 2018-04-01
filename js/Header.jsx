@@ -24,7 +24,7 @@ const Header = (props: { showSearch?: boolean, handleSearchTermChange: Function,
     <header>
       <h1>
         <Link to="/">
-          svideo
+          blockchains
         </Link>
       </h1>
       {utilSpace}
