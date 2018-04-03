@@ -15,7 +15,7 @@ const Image = styled.img`
   animation: ${spin} 4s infinite linear;
   background-image: url(/public/img/loading.png);
   background-repeact: no-repeat;
-  max-width: 250px;
+  max-width: 50px;
 `;
 
 const Spinner = () => <Image src="/public/img/loading.png" alt="loading indicator" />;

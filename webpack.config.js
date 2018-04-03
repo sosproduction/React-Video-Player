@@ -49,4 +49,10 @@ if (process.env.NODE_ENV === 'development') {
   config.entry.unshift('webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000');
 }
 
+if (process.env.NODE_ENV === 'production') {
+  config.entry = './js/ClientApp.jsx';
+  config.devtool = false;
+  config.plugins = [];
+}
+
 module.exports = config;

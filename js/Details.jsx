@@ -19,7 +19,7 @@ class Details extends React.Component {
     show: Show
   };
   render() {
-    const { title, description, year, poster, trailer } = this.props.show;
+    const { title, description, year, trailer } = this.props.show;
     let rating;
     if (this.props.rating) {
       rating = <h3>{this.props.rating}</h3>;
@@ -27,18 +27,25 @@ class Details extends React.Component {
       rating = <Spinner />;
     }
     return (
-      <div className="details">
+      <div>
         <Header />
-        <section>
+       
+        <div>
+           <ClapprPlayer id="video" source={`${trailer}`} width="640" height="360" />
+        </div>
+
+         <section>
           <h1>{title}</h1>
           <h2>({year})</h2>
+          <h2>{trailer}</h2>
           {rating}
-          <img src={`/public/img/posters/${poster}`} alt={`Poster for ${title}`} />
+          
+          {/* Stop showing big honking poster */}
+          { /* <img src={`/public/img/posters/${poster}`} alt={`Poster for ${title}`} /> */}
+          
           <p>{description}</p>
         </section>
-        <div>
-           <ClapprPlayer id={`${imdbID}`} source={`${trailer}`} width="640" height="360" />
-        </div>
+        
       </div>
     );
   }

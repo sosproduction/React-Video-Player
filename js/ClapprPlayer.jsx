@@ -1,36 +1,59 @@
-import React from 'react'
+// @flow
+
+import React, { Component } from 'react'
 import Clappr from 'clappr'
 
-class ClapprPlayer extends React.Component {
+class ClapprPlayer extends Component {
 
-  componentDidMount(){
-    
-    const { imdbID, trailer } = this.props;
-    
-    this.clappr_player = new Clappr.Player({
-      parent: `#${imdbID}`,
-      source: {trailer}
-    });
-        
-  }
-  
-  componentWillUnmount() {
-    this.clappr_player.destroy();
-    this.clappr_player = null;
-  }
-  
-  render() {
-
-    const { id } = this.props;
-    
-    return (
-      <div>
-        <p>Active</p>
-        <p id={id} />
-      </div>
-    );
-  }
-  
+    componentDidMount() {
+        this.change(this.props.source)
+    }
+    shouldComponentUpdate(nextProps) {
+        const changed = (nextProps.source !== this.props.source)
+        if (changed) {
+            this.change(nextProps.source)
+        }
+        return false
+    }
+    componentWillUnmount() {
+        this.destroyPlayer()
+    }
+    props: {
+        id: string,
+        source: string,
+        width: number,
+        height: number
+    }
+    destroyPlayer = () => {
+        if (this.player) {
+            this.player.destroy()
+        }
+        this.player = null
+    }
+    change = source => {
+        if (this.player) {
+            this.player.load(source)
+            return
+        }
+        const { id, width, height } = this.props
+        this.player = new Clappr.Player({
+            baseUrl: "/assets/clappr",
+            parent: `#${id}`,
+            source: source,
+            hideMediaControl: false,
+            autoPlay: true,
+            width: width,
+            height: height
+        })
+    }
+    render() {
+        const { id } = this.props
+        return (
+            <div>
+                <div id={id} />
+            </div>
+        )
+    }
 }
 
 export default ClapprPlayer
