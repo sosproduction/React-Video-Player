@@ -14,6 +14,7 @@ const webpack = require('webpack');
 const config = require('./webpack.config');
 const App = require('./js/App').default;
 
+// Use Static Router
 const StaticRouter = ReactRouter.StaticRouter;
 const port = 8080;
 const baseTemplate = fs.readFileSync('./index.html');

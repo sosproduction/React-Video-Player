@@ -1,4 +1,5 @@
-/* eslint no-console: 0 */
+// Small express server to generate random ratings for videos
+
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
