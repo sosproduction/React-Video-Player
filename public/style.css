@@ -136,6 +136,7 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  color: #fff;
 }
 
 /**
@@ -439,168 +440,50 @@ html {
   position: relative;
   width: 100%;
   height: 100vh;
-  
-/* Remove background from application
-  background-image: url(/public/img/3.jpg);
-  background-size: cover;
-  background-position: center;
-*/
-  
-
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #333;
+  color: #fff;
 }
 
-.app > h1 {
+.app h1 {
+  font-family: helvetica, helvetica-neue;
   color: white;
 }
 
-.landing {
-  background-color: rgba(220, 220, 220, .7);
-  padding: 15px 30px;
-  border-radius: 5px;
-}
-
-.landing > h1 {
-  color: #B10DC9;
-  font-family: Skia;
-  font-weight: normal;
-}
-
-.landing > input, .landing > form > input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-}
-
-.landing > form {
-  width: 100%;
-  min-width: 300px;
-}
-
-.landing > a {
-  margin-top: 15px;
-  padding: 10px 40px;
-  background-color: #333;
-  color: #fafafa;
-  border-color: transparent;
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.landing > a:hover, .landing > a:focus {
-  background-color: #666;
-}
-
-.landing > a:active {
-  background-color: #fafafa;
-  color: #333;
-  border-color: #333;
-}
-
-.details, .search {
+.details {
   position: absolute;
   top: 15px;
   left: 15px;
   right: 15px;
   bottom: 15px;
   overflow-y: scroll;
-  /* Remove background opacity
-  /* background-color: rgba(220, 220, 220, .8); */
   padding: 15px 30px;
   border-radius: 5px;
   min-width: 1400px;
 }
 
+div#container section {
+  color: #fff;
+}
+
 .search > div {
   display: grid;
   justify-content: right;
-  
-/*
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-*/
 }
 
 pre {
   text-align: left;
 }
 
-// .search > div > a {
-//   width: 30%;
-//   height: 0;
-//   padding-bottom: 19.8%;
-//   overflow: hidden;
-//   margin-bottom: 3%;
-//   border: 2px solid #333;
-//   border-radius: 4px;
-//   color: #333;
-//   text-decoration: none;
-// }
 
-// .search > div > a {
-//   width: 100%;
-//   padding-bottom: 70%;
-//   height: 0;
-//   overflow: inherit;
-//   margin-bottom: inherit;;
-//   border: none;
-//   border-radius: inherit;
-// }
-
-// .show-card {
-//   float: left;
-//   margin-right: 2%;
-//   border: 2px solid #333;
-//   border-radius: 4px;
-//   text-align: left;
-//   width: 32%;
-//   height: 0;
-//   padding-bottom: 19.8%;
-//   overflow: hidden;
-//   margin-bottom: 2%;
-// }
-
-// .show-card:nth-child(3n), .search > div > a:nth-child(3n) > .show-card {
-//   margin-right: 0;
-// }
-
-// .show-card > img {
-//   width: 46%;
-//   float: left;
-// }
-
-// .show-card > div{
-//   display: block;
-//   float: right;
-//   width: 52%;
-//   overflow-y: scroll;
-// }
-
-// .show-card > div > h3 {
-//   margin-top: 0;
-//   margin-bottom: 5px;
-// }
-
-// .show-card > div > h4 {
-//   margin-top: 0;
-//   margin-bottom: 5px;
-//   color: #666;
-//   font-size: 13px;
-// }
-
-// .show-card > div > p {
-//   margin: 0;
-//   font-size: 13px;
-}
 
 .search > header + div {
-  margin-top: 25px;
+  margin-top: 75px;
 }
 
 header {
@@ -614,12 +497,12 @@ header {
   left: 0;
   width: 100%;
   overflow: hidden;
-  background-color: #303030;
+  background-color: #375a7f;
   padding: 8px 30px;
 }
 
 header > h1 {
-  font-family: Skia;
+  font-family: Helvetica, Helvetica-neue;
   font-weight: normal;
   color: #fff;
   margin: 0;
@@ -640,6 +523,16 @@ header > h2 > a {
   text-decoration: none;
 }
 
+header > input {
+  min-width: 250px;
+  max-width: 350px;
+  width: 33%;
+  padding: 4px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+
 .details > div {
   width: 100%;
   height: 0;
@@ -653,15 +546,6 @@ header > h2 > a {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-header > input {
-  min-width: 250px;
-  max-width: 350px;
-  width: 33%;
-  padding: 4px;
-  border: 2px solid #ccc;
-  border-radius: 4px;
 }
 
 .details > section > img, .details > section > h3 {

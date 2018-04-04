@@ -2,41 +2,41 @@
     "shows": [
         {
             "title": "HLS Video 1",
-            "year": "2018",
-            "description": "This is a video description",
-            "poster": "a.jpg",
+            "year": "1931",
+            "description": "The Persistence of Memory",
+            "poster": "dali1.jpg",
             "imdbID": "tt4288182",
             "trailer": "https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8"
         },
         {
             "title": "HLS Video 2",
-            "year": "2018",
-            "description": "This is a video description",
-            "poster": "b.jpg",
+            "year": "1945",
+            "description": "Burning Giraffes and Telephone",
+            "poster": "dali2.jpg",
             "imdbID": "tt4270492",
             "trailer": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"
         },
         {
             "title": "HLS Video 3",
-            "year": "2018",
-            "description": "This is a video description",
-            "poster": "bm.jpg",
+            "year": "1933",
+            "description": "The Weaning of Furniture Nutrition",
+            "poster": "dali3.jpg",
             "imdbID": "tt2085059",
             "trailer": "https://mnmedias.api.telequebec.tv/m3u8/29880.m3u8"
         },
         {
             "title": "HLS Video 4",
-            "year": "2018",
-            "description": "This is a video description",
-            "poster": "bb.jpg",
+            "year": "1955",
+            "description": "The Birth of Division",
+            "poster": "dali4.jpg",
             "imdbID": "tt093747",
             "trailer": "http://184.72.239.149/vod/smil:BigBuckBunny.smil/playlist.m3u8"
         },
         {
             "title": "HLS Video 5",
-            "year": "2018",
-            "description": "This is a video description",
-            "poster": "ww.jpg",
+            "year": "1947",
+            "description": "Millet and the Miller",
+            "poster": "dali5.jpg",
             "imdbID": "tt0944947",
             "trailer": "http://www.streambox.fr/playlists/test_001/stream.m3u8"
         }

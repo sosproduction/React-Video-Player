@@ -27,9 +27,8 @@ class Details extends React.Component {
       rating = <Spinner />;
     }
     return (
-      <div>
+      <div id="container">
         <Header />
-       
         <div>
            <ClapprPlayer id="video" source={`${trailer}`} width="640" height="360" />
         </div>
@@ -37,12 +36,7 @@ class Details extends React.Component {
          <section>
           <h1>{title}</h1>
           <h2>({year})</h2>
-          <h2>{trailer}</h2>
-          {rating}
-          
-          {/* Stop showing big honking poster */}
-          { /* <img src={`/public/img/posters/${poster}`} alt={`Poster for ${title}`} /> */}
-          
+          <h2>Rating: {rating}</h2>
           <p>{description}</p>
         </section>
         

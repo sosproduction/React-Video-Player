@@ -40,6 +40,10 @@ const config = {
         test: /\.jsx?$/,
         loader: 'babel-loader',
         include: [path.resolve('js'), path.resolve('node_modules/preact-compat/src')]
+      },
+      {
+        test:/\.(s*)css$/,
+        use:['style-loader','css-loader', 'sass-loader']
       }
     ]
   }

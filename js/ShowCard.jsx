@@ -6,18 +6,19 @@ import { Link } from 'react-router-dom';
 
 // $FlowFixMe
 const Wrapper = styled(Link)`
-  width: 32%;
+  width: 85%;
   border: 2px solid #333;
   border-radius: 4px;
   margin-bottom: 25px;
   padding-right: 10px;
   overflow: hidden;
   text-decoration: none;
-  color: black;
+  color: white;
 `;
 
 const Image = styled.img`
-  width: 46%;
+  width: 260px;
+  height: 160px;
   float: left;
   margin-right: 10px;
 `;

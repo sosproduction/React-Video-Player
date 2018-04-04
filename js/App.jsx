@@ -15,7 +15,7 @@ const App = () => (
       <Root>
         <Main>
           <Route exact path="/" render={() => (
-            <h1>Welcome</h1>
+            <h1>Welcome to Video SPA assessment</h1>
           )}/>
           <Route path="/details/:id" component={(props: { match: Match }) => {
               const selectedShow = preload.shows.find((show: Show) => props.match.params.id === show.imdbID);
@@ -30,8 +30,8 @@ const App = () => (
         </Main>
         <Sidebar>
           <Route path="/" component={props => (
-              <AsyncRoute loadingPromise={import('./Search')} props={Object.assign({ shows: preload.shows }, props)} />
-            )}
+            <AsyncRoute loadingPromise={import('./Search')} props={Object.assign({ shows: preload.shows }, props)} />
+          )}
           />
         </Sidebar>
       </Root>
@@ -50,7 +50,7 @@ const Sidebar = (props) => (
     width: '33vw',
     height: '100vh',
     overflow: 'auto',
-    background: '#eee'
+    background: '#222'
   }} {...props} />
 )
 
@@ -67,9 +67,10 @@ const Main = (props) => (
   <div style={{
     flex: 1,
     height: '100vh',
-    overflow: 'auto'
+    overflow: 'auto',
+    background: '#222'
   }}>
-    <div style={{ padding: '20px' }} {...props} />
+    <div style={{ padding: '75px 50px 50px 45px' }} {...props} />
   </div>
 )
 
