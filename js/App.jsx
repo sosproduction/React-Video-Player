@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import type { Match } from 'react-router-dom';
 import AsyncRoute from './AsyncRoute';
@@ -51,15 +51,6 @@ const Sidebar = (props) => (
     height: '100vh',
     overflow: 'auto',
     background: '#222'
-  }} {...props} />
-)
-
-const SidebarItem = (props) => (
-  <div style={{
-    whitespace: 'nowrap',
-    textOverflow: 'ellipsis',
-    overflow: 'hidden',
-    padding: '5px 10px'
   }} {...props} />
 )
 
