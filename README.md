@@ -1,6 +1,6 @@
-# Blockchains Video Player SPA assessment
+# React/Redux Video Player using Clappr
 
-The Video SPA assessment realized using ReactJS, React Router v4, Redux, Flow, and ExpressJS
+Video player experiment realized using ReactJS, React Router v4, Redux, Flow, and ExpressJS
 
 ### To build and run.
 
